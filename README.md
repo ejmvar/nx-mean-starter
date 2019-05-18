@@ -117,6 +117,13 @@ Omitting app-name will result in running command for the default app.
 ng g app web-app --style=scss --unit-test-runner=jest --e2e-test-runner=cypress --routing --prefix=app
 ```
 
+### Build optimization
+
+```
+ng build <app-name> --prod --stats-json
+npx webpack-bundle-analyzer dist/apps/<app-name>/stats.json
+```
+
 ## Add Ionic
 
 ```
